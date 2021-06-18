@@ -14,7 +14,7 @@ terraform {
   required_providers {
     intersight = {
       source = "CiscoDevNet/intersight"
-      version = "1.0.10"
+      version = "1.0.8"
     }
   }
 }
@@ -83,7 +83,7 @@ resource "intersight_kubernetes_cluster_profile" "kubeprof" {
 	moid = data.intersight_ippool_pool.ippool_moid.results.0.moid
   }
   management_config {
-	encrypted_etcd = local.mgmtcfgetcd
+#	encrypted_etcd = local.mgmtcfgetcd
 	load_balancer_count = local.mgmtcfglbcnt
 	ssh_keys = [ 
 		 var.mgmtcfgsshkeys
