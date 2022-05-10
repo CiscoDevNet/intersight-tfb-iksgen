@@ -6,6 +6,8 @@
 #name = "testsjc2"
 
 globalwsname = "sb_globalvar"
+globalwsname2 = "sb_globalvar"
+
 # profile params
 # IP Pool name and moid 
 #ippool_list = "testsjcippool"
